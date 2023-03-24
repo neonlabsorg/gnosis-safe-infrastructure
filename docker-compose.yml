@@ -108,7 +108,7 @@ services:
       - cgw-redis
 
   ui:
-    image: neonlabsorg/web-core:${UI_VERSION}
+    image: neonlabsorg/gnosis-neon-ui:${UI_VERSION}
     env_file:
       - container_env_files/ui.env
     depends_on:
