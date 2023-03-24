@@ -87,7 +87,7 @@ services:
 
   # Safe Config Service
   cfg-web:
-    image: neonlabsorg/gnosis-neon-transaction-service-web:${CFG_VERSION}
+    image: neonlabsorg/gnosis-safe-config-service:${CFG_VERSION}
     tty: true
     volumes:
       - nginx-shared-cfg:/nginx
