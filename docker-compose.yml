@@ -43,7 +43,7 @@ services:
     image: rabbitmq:alpine
 
   txs-web: 
-    image: neonlabsorg/gnosis-neon-transaction-service:${TXS_VERSION}
+    image: neonlabsorg/neon-gnosis-config-service:${TXS_VERSION}
     env_file:
       - container_env_files/txs.env
     environment:
@@ -108,7 +108,7 @@ services:
       - cgw-redis
 
   ui:
-    image: neonlabsorg/gnosis-neon-ui:${UI_VERSION}
+    image: neonlabsorg/gnosis-neon-ui-v2:dev
     env_file:
       - container_env_files/ui.env
     depends_on:
