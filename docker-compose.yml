@@ -43,7 +43,7 @@ services:
     image: rabbitmq:alpine
 
   txs-web: 
-    image: neonlabsorg/neon-gnosis-config-service:${TXS_VERSION}
+    image: neonlabsorg/gnosis-safe-config-service:${TXS_VERSION}
     env_file:
       - container_env_files/txs.env
     environment:
