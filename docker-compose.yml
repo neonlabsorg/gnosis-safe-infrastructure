@@ -101,7 +101,7 @@ services:
     image: redis:alpine
 
   cgw-web:
-    image: neonlabsorg/gnosis-neon-transaction-client-gateway:${CGW_VERSION}
+    image: neonlabsorg/neon-gnosis-client-gateway:${CGW_VERSION}
     env_file:
       - container_env_files/cgw.env
     depends_on:
