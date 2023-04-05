@@ -87,7 +87,7 @@ services:
 
   # Safe Config Service
   cfg-web:
-    image: safeglobal/safe-config-service:${CFG_VERSION}
+    image: neonlabsorg/gnosis-neon-safe-config-service:${CFG_VERSION}
     tty: true
     volumes:
       - nginx-shared-cfg:/nginx
@@ -102,7 +102,7 @@ services:
 
   cgw-web:
     image: neonlabsorg/neon-safe-client-gateway:${CGW_VERSION}
-    platform: linux/arm64
+    platform: linux/amd64
     env_file:
       - container_env_files/cgw.env
     depends_on:
