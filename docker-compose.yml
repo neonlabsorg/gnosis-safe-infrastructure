@@ -102,7 +102,7 @@ services:
 
   cgw-web:
     image: neonlabsorg/neon-safe-client-gateway:${CGW_VERSION}
-    platform: linux/amd64
+    platform: linux/arm64
     env_file:
       - container_env_files/cgw.env
     depends_on:
